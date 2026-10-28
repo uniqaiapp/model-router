@@ -34,7 +34,7 @@ Rules live in `scripts/lib/classify.mjs` and are mirrored in `SKILL.md` (decisio
 
 ## Deviations from org conventions
 
-- Runtime is Node, not Python as `_shared/repos.json` lists for this repo: the build brief asked for a zero-dependency Node cost calculator, and the classifier shares its price library, so one runtime keeps the repo small. CI runs the Node job only.
+- Runtime is Node, not Python as the org repo list records for this repo: the build brief asked for a zero-dependency Node cost calculator, and the classifier shares its price library, so one runtime keeps the repo small. CI runs the Node job only.
 - `.github/ISSUE_TEMPLATE/price_update.md` is an extra template; price corrections are this repo's main inbound traffic.
-- `.github/repo.json` holds the GitHub description, topics and homepage from `_shared/meta.json` for the release step; the org tooling may apply it.
-- README follows `_shared/design/README.template.md` (hero, badges, feature grid, quickstart, demo, how it works, examples, install, FAQ) with the conventions' "Limits and honesty" and "Related" sections added.
+- `.github/repo.json` holds the GitHub description, topics and homepage for the release step; the org tooling may apply it.
+- README follows the org README template (hero, badges, feature grid, quickstart, demo, how it works, examples, install, FAQ) with the conventions' "Limits and honesty" and "Related" sections added.

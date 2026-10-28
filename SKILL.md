@@ -116,7 +116,7 @@ Tiers are price bands plus the vendor's own positioning (mini / flash / haiku vs
 
 ## Cost rules of thumb the router applies
 
-- Output tokens cost 4 to 6 times input tokens on most models; a shorter answer format saves more than a cheaper model with a chatty one.
+- Output tokens cost 2 to 8 times input tokens across the table, 4 to 8 times on most rows (`node scripts/cost.mjs --list` prints both columns); a shorter answer format often saves more than a cheaper model with a chatty one.
 - A cached prefix is priced at a fraction of input (listed per model as `cached_input`); keep system prompt and tools byte-stable and pass `--cached` to see the effect.
 - Batch processing is listed at 50% off by OpenAI and Anthropic (as checked on the table date); the calculator applies it only where the table records a verified discount and says when it does not.
 - Some vendors charge more once the prompt passes a threshold (Claude Haiku 5.5 at 100k, Gemini Pro and Grok at 200k); the calculator switches to those rows automatically.

@@ -18,7 +18,7 @@
 
 </div>
 
-**model-router** is an LLM model router you can read: a decision table that classifies a task into three tiers (fast, smart, premium) by its shape, recommends the cheapest model per provider for OpenAI, Anthropic, Google and xAI, and estimates the cost before you run it. It ships as a Claude Code skill, an `AGENTS.md` section and a Cursor rule, plus two dependency-free Node scripts. Every price cell in [`data/prices.json`](data/prices.json) carries the vendor's pricing-page URL and a "checked" date; the table was last checked on 2026-10-28, and every number in this README is the committed output of a script in this repo.
+**model-router** is an LLM model router you can read: a decision table that classifies a task into three tiers (fast, smart, premium) by its shape, recommends the cheapest model per provider for OpenAI, Anthropic, Google and xAI, and estimates the cost before you run it. It ships as a Claude Code skill, an `AGENTS.md` section and a Cursor rule, plus two dependency-free Node scripts. We keep this table because the same four model families run side by side in [UniqAI chat](https://uniqai.app/chat?utm_source=github&utm_medium=readme&utm_campaign=model-router), and "which one should answer this" is a question we have to answer on every request. Every price cell in [`data/prices.json`](data/prices.json) carries the vendor's pricing-page URL and a "checked" date; the table was last checked on 2026-10-28, and every number in this README is the committed output of a script in this repo.
 
 | **Classify by shape, not vibes** | **Price it before you run it** | **Prices with receipts** |
 |:---|:---|:---|
@@ -35,7 +35,7 @@ You get the tier, the reasons, the cheapest model per provider with per-call and
 
 ## Demo
 
-<img alt="model-router demo: routing a ticket-classification job to the fast tier and pricing it per provider" src="assets/demo.svg" width="980">
+<img alt="model-router demo: installing the skill, routing a 50,000-ticket classification job to the fast tier, pricing it per provider and naming the smart fallback" src="assets/demo.svg" width="980">
 
 ## How it works
 
@@ -257,6 +257,6 @@ Issues and pull requests are welcome; price corrections with the vendor URL and 
 
 <div align="center">
 
-<sub>Made by <a href="https://uniqai.app/?utm_source=github&utm_medium=readme&utm_campaign=model-router">UniqAI</a> — Kling 3.0, Veo 3, Flux, Nano Banana and GPT-5/Claude/Gemini/Grok in one app. We run all four model families side by side in <a href="https://uniqai.app/chat?utm_source=github&utm_medium=readme&utm_campaign=model-router">UniqAI chat</a>, so this table is the one we keep for ourselves.</sub>
+<sub>Made by <a href="https://uniqai.app/?utm_source=github&utm_medium=readme&utm_campaign=model-router">UniqAI</a> — Kling 3.0, Veo 3, Flux, Nano Banana and GPT-5/Claude/Gemini/Grok in one app.</sub>
 
 </div>
