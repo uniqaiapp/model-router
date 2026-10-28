@@ -1,0 +1,8 @@
+{
+  "task": "Answer the customer in a support chat using the retrieved help-center articles, cite the article used",
+  "input": 6000,
+  "output": 250,
+  "calls": 20000,
+  "cached": 4000,
+  "risk": "medium"
+}

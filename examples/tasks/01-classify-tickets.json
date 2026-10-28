@@ -1,0 +1,7 @@
+{
+  "task": "Classify 50,000 support tickets into billing / bug / feature / other",
+  "input": 600,
+  "output": 20,
+  "calls": 50000,
+  "risk": "low"
+}

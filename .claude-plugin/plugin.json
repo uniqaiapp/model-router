@@ -1,0 +1,15 @@
+{
+  "name": "model-router",
+  "version": "0.1.0",
+  "description": "Routes an LLM task to the cheapest model tier that can do it (fast / smart / premium), recommends a model per provider (OpenAI, Anthropic, Google, xAI) and estimates cost before you run it, from a dated, sourced price table.",
+  "author": {
+    "name": "UniqAI",
+    "email": "support@uniqai.app",
+    "url": "https://uniqai.app/?utm_source=github&utm_medium=plugin&utm_campaign=model-router"
+  },
+  "homepage": "https://github.com/uniqaiapp/model-router",
+  "repository": "https://github.com/uniqaiapp/model-router",
+  "license": "MIT",
+  "keywords": ["claude-code", "skill", "llm-router", "model-routing", "llm-cost", "model-selection"],
+  "skills": ["./"]
+}

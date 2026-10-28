@@ -1,0 +1,13 @@
+task      Implement a parser for the config format in docs/format.md and write unit tests for the edge cases
+tier      SMART   (fast 2 · smart 2 · premium 0; confidence low)
+why       extraction / format conversion ("parse")                       fast +2
+          scoped coding task ("implement a parser")                      smart +2
+assumes   14,000 input + 2,500 output tokens per call, 1 call; prices as of 2026-10-28
+
+cheapest smart model per provider (per call → total)
+  openai     gpt-6.1-terra                  $0.0265     →  $0.0265
+  anthropic  claude-sonnet-5-5              $0.0530     →  $0.0530
+  google     gemini-3.6-flash               $0.0199     →  $0.0199
+  xai        grok-4.20-0309-reasoning       $0.0238     →  $0.0238
+
+fallback  premium: gemini-4-argon ($0.0530 per call, $0.0530 total) if smart-tier output fails your check on a sample

@@ -1,0 +1,20 @@
+$ npx skills add uniqaiapp/model-router
+# resolving skill manifest
++ installed .claude/skills/model-router
+@wait 500
+$ node scripts/route.mjs "Classify 50,000 support tickets" --input 600 --output 20 --calls 50000 --risk low
+> task      Classify 50,000 support tickets
+> tier      {b:FAST}   (fast 6 · smart 0 · premium 0; confidence high)
+> why       classification / labelling verb ("classify")                   fast {l:+2}
+>           short expected output (20 tokens)                              fast {l:+1}
+>           high volume (50,000 calls): a cheaper tier compounds           fast {l:+2}
+>           low risk: errors are cheap to catch and retry                  fast {l:+1}
+> assumes   600 input + 20 output tokens per call, 50,000 calls; prices as of 2026-10-28
+>
+> cheapest fast model per provider (per call → total)
+>   openai     gpt-5-nano                     $0.000038   →  {y:$1.90}
+>   anthropic  claude-haiku-5-5               $0.000070   →  {y:$3.50}
+>   google     gemini-2.5-flash-lite          $0.000068   →  {y:$3.40}
+>   xai        grok-build-0.1                 $0.000640   →  {y:$32.00}
+@wait 400
+# fallback line omitted for width: smart tier, gemini-3.6-flash, $26.25 total

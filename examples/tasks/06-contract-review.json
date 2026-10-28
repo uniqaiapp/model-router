@@ -1,0 +1,6 @@
+{
+  "task": "Review this vendor contract for liability, termination and data-processing clauses and flag anything unusual for legal",
+  "input": 25000,
+  "output": 1500,
+  "risk": "high"
+}

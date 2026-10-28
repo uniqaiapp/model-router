@@ -1,0 +1,12 @@
+task      Help with the thing from yesterday
+tier      SMART   (fast 0 · smart 0 · premium 0; confidence low)
+why       no rule matched; default is smart (measure on a sample, then step down) smart  0
+assumes   2,000 input + 500 output tokens per call, 1 call; prices as of 2026-10-28
+
+cheapest smart model per provider (per call → total)
+  openai     gpt-6.1-terra                  $0.004500   →  $0.004500
+  anthropic  claude-sonnet-5-5              $0.009000   →  $0.009000
+  google     gemini-3.6-flash               $0.003375   →  $0.003375
+  xai        grok-4.20-0309-reasoning       $0.003750   →  $0.003750
+
+fallback  premium: gemini-4-argon ($0.009000 per call, $0.009000 total) if smart-tier output fails your check on a sample

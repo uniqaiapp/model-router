@@ -1,0 +1,6 @@
+{
+  "task": "Triage every alert from the scanner and write a threat model for the ones that look like a real vulnerability",
+  "input": 4000,
+  "output": 800,
+  "calls": 5000
+}

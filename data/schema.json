@@ -1,0 +1,45 @@
+{
+  "$comment": "Hand-written schema for data/prices.json, validated by scripts/check.mjs (no jsonschema package). `type` is a JS typeof or `null`-able union written as 'number|null'. `required: true` means the key must be present.",
+  "top": {
+    "schema_version": { "type": "string", "required": true },
+    "updated": { "type": "string", "required": true, "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "currency": { "type": "string", "required": true, "enum": ["USD"] },
+    "unit": { "type": "string", "required": true },
+    "tier_bands": { "type": "object", "required": true },
+    "providers": { "type": "object", "required": true },
+    "models": { "type": "array", "required": true }
+  },
+  "provider": {
+    "name": { "type": "string", "required": true },
+    "pricing_url": { "type": "string", "required": true, "pattern": "^https://" },
+    "batch_discount": { "type": "number|null", "required": true },
+    "batch_note": { "type": "string", "required": false },
+    "checked": { "type": "string", "required": true, "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+  },
+  "model": {
+    "id": { "type": "string", "required": true, "pattern": "^[a-z0-9][a-z0-9.\\-]*$" },
+    "provider": { "type": "string", "required": true },
+    "name": { "type": "string", "required": true },
+    "tier": { "type": "string", "required": true, "enum": ["fast", "smart", "premium"] },
+    "tier_note": { "type": "string", "required": false },
+    "input": { "type": "number|null", "required": true },
+    "cached_input": { "type": "number|null", "required": true },
+    "output": { "type": "number|null", "required": true },
+    "context": { "type": "number|null", "required": true },
+    "long_context": { "type": "object", "required": false },
+    "promo": { "type": "object", "required": false },
+    "notes": { "type": "string", "required": false },
+    "source": { "type": "string", "required": true, "pattern": "^https://" },
+    "checked": { "type": "string", "required": true, "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+  },
+  "long_context": {
+    "threshold": { "type": "number", "required": true },
+    "input": { "type": "number|null", "required": true },
+    "cached_input": { "type": "number|null", "required": true },
+    "output": { "type": "number|null", "required": true }
+  },
+  "promo": {
+    "until": { "type": "string", "required": true, "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "after": { "type": "object", "required": true }
+  }
+}

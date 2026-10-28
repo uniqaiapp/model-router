@@ -1,0 +1,8 @@
+{
+  "task": "Nightly summarisation of 2,000 long call transcripts, no latency requirement",
+  "tier": "smart",
+  "input": 40000,
+  "output": 600,
+  "calls": 2000,
+  "batch": true
+}

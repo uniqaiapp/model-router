@@ -1,0 +1,7 @@
+{
+  "task": "Translate 1,200 short UI strings from English to German, keep placeholders like {count} intact",
+  "input": 80,
+  "output": 40,
+  "calls": 1200,
+  "risk": "low"
+}

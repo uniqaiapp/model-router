@@ -1,0 +1,38 @@
+all models, cheapest first
+shape     6,000 input + 250 output tokens per call, 1 call (4,000 cached); prices as of 2026-10-28
+
+  model                          provider   tier        per call       total  notes
+  gpt-5-nano                     openai     fast       $0.000220   $0.000220
+  gemini-2.5-flash-lite          google     fast       $0.000340   $0.000340
+  claude-haiku-5-5               anthropic  fast       $0.000365   $0.000365
+  gpt-6-luna                     openai     fast       $0.000365   $0.000365
+  gpt-5.6-luna                   openai     fast       $0.000780   $0.000780
+  gemini-3.1-flash-lite          google     fast       $0.000975   $0.000975
+  gpt-5-mini                     openai     fast       $0.001100   $0.001100
+  gemini-2.5-flash               google     fast       $0.001345   $0.001345
+  gemini-3.5-flash-lite          google     fast       $0.001345   $0.001345
+  gemini-3-flash-preview         google     fast       $0.001950   $0.001950
+  gemini-3.6-flash               google     smart      $0.002737   $0.002738
+  gemini-3.8-flash               google     smart      $0.002737   $0.002738
+  grok-build-0.1                 xai        fast       $0.003300   $0.003300
+  gpt-6.1-terra                  openai     smart      $0.003450   $0.003450
+  grok-4.20-0309-non-reasoning   xai        fast       $0.003925   $0.003925
+  grok-4.20-0309-reasoning       xai        smart      $0.003925   $0.003925
+  grok-4.3                       xai        fast       $0.003925   $0.003925
+  gemini-2.5-pro                 google     smart      $0.005500   $0.005500
+  grok-4.5                       xai        smart      $0.006700   $0.006700
+  claude-sonnet-5-5              anthropic  smart      $0.006900   $0.006900
+  gemini-4-argon                 google     premium    $0.006900   $0.006900
+  gpt-6.1-sol                    openai     smart      $0.006900   $0.006900
+  gpt-6-sol                      openai     smart      $0.007300   $0.007300
+  grok-4.6                       xai        smart      $0.007500   $0.007500
+  grok-4.7                       xai        smart      $0.007500   $0.007500
+  gemini-3.1-pro-preview         google     smart      $0.007800   $0.007800
+  gpt-5.6-terra                  openai     smart      $0.007800   $0.007800
+  claude-opus-5-5                anthropic  premium      $0.0138     $0.0138
+  gpt-5.6-sol                    openai     premium      $0.0146     $0.0146
+  claude-opus-5                  anthropic  premium      $0.0182     $0.0182
+  gpt-5.5                        openai     premium      $0.0195     $0.0195
+  claude-fable-5-1               anthropic  premium      $0.0335     $0.0335
+  gpt-6-astra                    openai     premium      $0.0365     $0.0365
+  gpt-5.5-pro                    openai     premium      $0.2250     $0.2250  no cached-input price listed; cached tokens priced as normal input

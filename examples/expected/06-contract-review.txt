@@ -1,0 +1,14 @@
+task      Review this vendor contract for liability, termination and data-processing clauses and flag anything unusual for legal
+tier      PREMIUM   (fast 0 · smart 2 · premium 5; confidence medium)
+why       judgment within a clear spec ("review")                        smart +2
+          high-stakes domain ("legal")                                   premium +2
+          high risk: an error is expensive or irreversible               premium +3
+assumes   25,000 input + 1,500 output tokens per call, 1 call; prices as of 2026-10-28
+
+cheapest premium model per provider (per call → total)
+  openai     gpt-5.6-sol                    $0.1300     →  $0.1300
+  anthropic  claude-opus-5-5                $0.1300     →  $0.1300
+  google     gemini-4-argon                 $0.0650     →  $0.0650
+  xai        grok-4.7                       $0.0590     →  $0.0590   no premium model at xAI; see tier_note: xAI's models page calls it their most capable model, but it is priced in the smart band; xAI lists no premium-band text model, so the router also offers it as the xAI fallback for premium tasks
+
+fallback  none above premium; if this still fails, split the task or add tools, do not just retry

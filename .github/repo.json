@@ -1,0 +1,13 @@
+{
+  "name": "model-router",
+  "description": "LLM model router rules: a task-to-model decision table (fast / smart / reasoning tiers) for GPT-5, Claude, Gemini and Grok with fallbacks and cost notes, usable as a Claude Code skill, AGENTS.md section or Cursor rule. Includes a stdlib Python classifier that routes prompts by shape. Prices are cited with dates. By UniqAI.",
+  "homepage": "https://uniqai.app/chat?utm_source=github&utm_medium=readme&utm_campaign=model-router",
+  "topics": ["llm-router", "model-routing", "llm-cost", "gpt-5", "claude", "gemini", "grok", "llm", "ai-agents", "claude-skills", "agent-skills", "agents-md", "cursor-rules", "uniqai"],
+  "has_issues": true,
+  "has_discussions": true,
+  "has_wiki": false,
+  "has_projects": false,
+  "default_branch": "main",
+  "social_preview": "assets/social-preview.png",
+  "note": "Description/topics/homepage copied from _shared/meta.json. The shipped classifier is Node (zero dependencies), not Python; update the description text at release time if the org keeps that wording."
+}

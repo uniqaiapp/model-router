@@ -1,0 +1,7 @@
+---
+description: Routes an LLM task to the cheapest model tier that can do it (fast / smart / premium), recommends a model per provider and estimates cost from a dated, sourced price table. Use when the user asks which model to use, what a prompt will cost, or how to cut LLM spend.
+globs:
+alwaysApply: false
+---
+
+@SKILL.md

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Price correction
+    url: https://github.com/uniqaiapp/model-router/issues/new?template=price_update.md
+    about: A price in data/prices.json is stale or wrong. Include the vendor page URL and the date you checked.
+  - name: Questions and ideas
+    url: https://github.com/uniqaiapp/model-router/discussions
+    about: Ask how to use the router or propose a routing rule.
+  - name: Email
+    url: mailto:support@uniqai.app
+    about: Anything that should not be public.

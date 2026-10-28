@@ -1,0 +1,13 @@
+task      Draft the release notes for v2.4 from this list of merged PRs, grouped by area, with a short intro
+tier      SMART   (fast 0 · smart 3 · premium 0; confidence medium)
+why       drafting prose with structure ("draft the release notes")      smart +2
+          medium risk                                                    smart +1
+assumes   9,000 input + 1,200 output tokens per call, 1 call; prices as of 2026-10-28
+
+cheapest smart model per provider (per call → total)
+  openai     gpt-6.1-terra                  $0.0150     →  $0.0150
+  anthropic  claude-sonnet-5-5              $0.0300     →  $0.0300
+  google     gemini-3.6-flash               $0.0112     →  $0.0112
+  xai        grok-4.20-0309-reasoning       $0.0143     →  $0.0143
+
+fallback  premium: gemini-4-argon ($0.0300 per call, $0.0300 total) if smart-tier output fails your check on a sample

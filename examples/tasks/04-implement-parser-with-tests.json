@@ -1,0 +1,5 @@
+{
+  "task": "Implement a parser for the config format in docs/format.md and write unit tests for the edge cases",
+  "input": 14000,
+  "output": 2500
+}

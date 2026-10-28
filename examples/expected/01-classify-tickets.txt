@@ -1,0 +1,15 @@
+task      Classify 50,000 support tickets into billing / bug / feature / other
+tier      FAST   (fast 6 · smart 0 · premium 0; confidence high)
+why       classification / labelling verb ("classify")                   fast +2
+          short expected output (20 tokens)                              fast +1
+          high volume (50,000 calls): a cheaper tier compounds           fast +2
+          low risk: errors are cheap to catch and retry                  fast +1
+assumes   600 input + 20 output tokens per call, 50,000 calls; prices as of 2026-10-28
+
+cheapest fast model per provider (per call → total)
+  openai     gpt-5-nano                     $0.000038   →  $1.90
+  anthropic  claude-haiku-5-5               $0.000070   →  $3.50
+  google     gemini-2.5-flash-lite          $0.000068   →  $3.40
+  xai        grok-build-0.1                 $0.000640   →  $32.00
+
+fallback  smart: gemini-3.6-flash ($0.000525 per call, $26.25 total) if fast-tier output fails your check on a sample

@@ -1,0 +1,15 @@
+task      Find the root cause of an intermittent deadlock in the payment service and propose a fix across the codebase
+tier      PREMIUM   (fast 0 · smart 1 · premium 7; confidence high)
+why       architecture or hard debugging ("root cause")                  premium +2
+          long-horizon or multi-file agent work ("across the codebase")  premium +2
+          long prompt (60,000 tokens) needs reliable attention           smart +1
+          high risk: an error is expensive or irreversible               premium +3
+assumes   60,000 input + 3,000 output tokens per call, 1 call; prices as of 2026-10-28
+
+cheapest premium model per provider (per call → total)
+  openai     gpt-5.6-sol                    $0.3000     →  $0.3000
+  anthropic  claude-opus-5-5                $0.3000     →  $0.3000
+  google     gemini-4-argon                 $0.1500     →  $0.1500
+  xai        grok-4.7                       $0.1380     →  $0.1380   no premium model at xAI; see tier_note: xAI's models page calls it their most capable model, but it is priced in the smart band; xAI lists no premium-band text model, so the router also offers it as the xAI fallback for premium tasks
+
+fallback  none above premium; if this still fails, split the task or add tools, do not just retry

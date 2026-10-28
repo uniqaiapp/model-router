@@ -1,0 +1,37 @@
+price table, USD per 1M tokens, as of 2026-10-28 (source and check date per row in data/prices.json)
+
+  model                          provider   tier        input   cached   output  checked
+  gpt-6-luna                     openai     fast        $0.10    $0.01    $0.50  2026-10-28
+  gpt-5.6-luna                   openai     fast        $0.20    $0.02    $1.20  2026-10-28
+  gpt-5-nano                     openai     fast        $0.05   $0.005    $0.40  2026-10-28
+  gpt-5-mini                     openai     fast        $0.25   $0.025    $2.00  2026-10-28
+  claude-haiku-5-5               anthropic  fast        $0.10    $0.01    $0.50  2026-10-28
+  gemini-2.5-flash-lite          google     fast        $0.10    $0.01    $0.40  2026-10-28
+  gemini-3.1-flash-lite          google     fast        $0.25   $0.025    $1.50  2026-10-28
+  gemini-2.5-flash               google     fast        $0.30    $0.03    $2.50  2026-10-28
+  gemini-3.5-flash-lite          google     fast        $0.30    $0.03    $2.50  2026-10-28
+  gemini-3-flash-preview         google     fast        $0.50    $0.05    $3.00  2026-10-28
+  grok-build-0.1                 xai        fast        $1.00    $0.20    $2.00  2026-10-28
+  grok-4.3                       xai        fast        $1.25    $0.20    $2.50  2026-10-28
+  grok-4.20-0309-non-reasoning   xai        fast        $1.25    $0.20    $2.50  2026-10-28
+  gpt-6.1-terra                  openai     smart       $1.00    $0.05    $5.00  2026-10-28
+  gpt-6.1-sol                    openai     smart       $2.00    $0.10   $10.00  2026-10-28
+  gpt-6-sol                      openai     smart       $2.00    $0.20   $10.00  2026-10-28
+  gpt-5.6-terra                  openai     smart       $2.00    $0.20   $12.00  2026-10-28
+  claude-sonnet-5-5              anthropic  smart       $2.00    $0.10   $10.00  2026-10-28
+  gemini-3.8-flash               google     smart       $0.75   $0.075    $3.75  2026-10-28
+  gemini-3.6-flash               google     smart       $0.75   $0.075    $3.75  2026-10-28
+  gemini-2.5-pro                 google     smart       $1.25   $0.125   $10.00  2026-10-28
+  gemini-3.1-pro-preview         google     smart       $2.00    $0.20   $12.00  2026-10-28
+  grok-4.20-0309-reasoning       xai        smart       $1.25    $0.20    $2.50  2026-10-28
+  grok-4.5                       xai        smart       $2.00    $0.30    $6.00  2026-10-28
+  grok-4.6                       xai        smart       $2.00    $0.50    $6.00  2026-10-28
+  grok-4.7                       xai        smart       $2.00    $0.50    $6.00  2026-10-28
+  gpt-5.6-sol                    openai     premium     $4.00    $0.40   $20.00  2026-10-28
+  gpt-5.5                        openai     premium     $5.00    $0.50   $30.00  2026-10-28
+  gpt-6-astra                    openai     premium    $10.00    $1.00   $50.00  2026-10-28
+  gpt-5.5-pro                    openai     premium    $30.00        —  $180.00  2026-10-28
+  claude-opus-5-5                anthropic  premium     $4.00    $0.20   $20.00  2026-10-28
+  claude-opus-5                  anthropic  premium     $5.00    $0.50   $25.00  2026-10-28
+  claude-fable-5-1               anthropic  premium    $10.00    $0.25   $50.00  2026-10-28
+  gemini-4-argon                 google     premium     $2.00    $0.10   $10.00  2026-10-28

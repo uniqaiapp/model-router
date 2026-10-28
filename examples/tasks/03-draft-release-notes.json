@@ -1,0 +1,6 @@
+{
+  "task": "Draft the release notes for v2.4 from this list of merged PRs, grouped by area, with a short intro",
+  "input": 9000,
+  "output": 1200,
+  "risk": "medium"
+}

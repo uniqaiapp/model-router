@@ -1,0 +1,6 @@
+{
+  "task": "Find the root cause of an intermittent deadlock in the payment service and propose a fix across the codebase",
+  "input": 60000,
+  "output": 3000,
+  "risk": "high"
+}

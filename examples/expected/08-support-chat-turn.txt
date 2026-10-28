@@ -1,0 +1,14 @@
+task      Answer the customer in a support chat using the retrieved help-center articles, cite the article used
+tier      SMART   (fast 2 · smart 2 · premium 0; confidence low)
+why       grounded answering / chat turn ("answer the customer")         smart +1
+          high volume (20,000 calls): a cheaper tier compounds           fast +2
+          medium risk                                                    smart +1
+assumes   6,000 input + 250 output tokens per call, 20,000 calls (4,000 cached); prices as of 2026-10-28
+
+cheapest smart model per provider (per call → total)
+  openai     gpt-6.1-terra                  $0.003450   →  $69.00
+  anthropic  claude-sonnet-5-5              $0.006900   →  $138
+  google     gemini-3.6-flash               $0.002737   →  $54.75
+  xai        grok-4.20-0309-reasoning       $0.003925   →  $78.50
+
+fallback  premium: gemini-4-argon ($0.006900 per call, $138 total) if smart-tier output fails your check on a sample

@@ -1,0 +1,21 @@
+name: tests
+on:
+  push: { branches: [main] }
+  pull_request:
+permissions: { contents: read }
+jobs:
+  node:
+    if: ${{ hashFiles('tests/run.mjs') != '' }}
+    runs-on: ubuntu-latest
+    strategy: { matrix: { node: ["18", "22"] } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "${{ matrix.node }}" }
+      - run: node tests/run.mjs
+      - run: node scripts/check.mjs
+  size:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: test "$(du -sk --exclude=.git . | cut -f1)" -lt 3072   # repo under 3 MB

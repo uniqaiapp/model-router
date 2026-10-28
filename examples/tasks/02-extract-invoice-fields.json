@@ -1,0 +1,6 @@
+{
+  "task": "Extract vendor, date, total and line items from each invoice PDF text as JSON",
+  "input": 3000,
+  "output": 300,
+  "calls": 8000
+}

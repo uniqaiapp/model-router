@@ -1,0 +1,16 @@
+task      Nightly summarisation of 2,000 long call transcripts, no latency requirement
+tier      SMART   (forced)
+why       tier set by --tier smart                                       smart  0
+assumes   40,000 input + 600 output tokens per call, 2,000 calls (batch); prices as of 2026-10-28
+
+cheapest smart model per provider (per call → total)
+  openai     gpt-6.1-terra                  $0.0215     →  $43.00
+                                            batch: x0.5 (OpenAI)
+  anthropic  claude-sonnet-5-5              $0.0430     →  $86.00
+                                            batch: x0.5 (Anthropic)
+  google     gemini-3.6-flash               $0.0323     →  $64.50
+                                            batch requested but no verified batch discount for this provider; standard price used
+  xai        grok-4.20-0309-reasoning       $0.0515     →  $103
+                                            batch requested but no verified batch discount for this provider; standard price used
+
+fallback  premium: claude-opus-5-5 ($0.0860 per call, $172 total) if smart-tier output fails your check on a sample

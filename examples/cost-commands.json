@@ -1,0 +1,6 @@
+[
+  { "name": "cost-one-haiku-long-context", "args": ["--model", "claude-haiku-5-5", "--input", "120000", "--output", "800", "--cached", "100000", "--batch"] },
+  { "name": "cost-compare-smart-1000-calls", "args": ["--tier", "smart", "--input", "12000", "--output", "1500", "--calls", "1000"] },
+  { "name": "cost-compare-all-chat-turn", "args": ["--compare", "--input", "6000", "--output", "250", "--cached", "4000"] },
+  { "name": "cost-list", "args": ["--list"] }
+]
