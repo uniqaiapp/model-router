@@ -18,6 +18,8 @@
 
 </div>
 
+English · [Русский](README.ru.md) · [简体中文](README.zh-CN.md) · [Español](README.es.md) · [Português (BR)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Deutsch](README.de.md)
+
 **model-router** is an LLM model router you can read: a decision table that classifies a task into three tiers (fast, smart, premium) by its shape, recommends the cheapest model per provider for OpenAI, Anthropic, Google and xAI, and estimates the cost before you run it. It ships as a Claude Code skill, an `AGENTS.md` section and a Cursor rule, plus two dependency-free Node scripts. We keep this table because the same four model families run side by side in [UniqAI chat](https://uniqai.app/chat?utm_source=github&utm_medium=readme&utm_campaign=model-router), and "which one should answer this" is a question we have to answer on every request. Every price cell in [`data/prices.json`](data/prices.json) carries the vendor's pricing-page URL and a "checked" date; the table was last checked on 2026-10-28, and every number in this README is the committed output of a script in this repo.
 
 | **Classify by shape, not vibes** | **Price it before you run it** | **Prices with receipts** |
